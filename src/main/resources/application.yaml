@@ -1,0 +1,19 @@
+#
+# Server configuration section
+#
+server:
+  port: ${WRDU_PORT:7083}
+
+spring:
+  datasource:
+    url: ${WRDU_DB_URL:jdbc:oracle:thin:mad_ref_data@//127.0.0.1:1521/XE}
+    username: ${WRDU_DB_USERNAME:mad_ref_data}
+    password: ${WRDU_DB_PASSWORD:mad}
+    driver-class-name: ${WRDU_DB_DRIVER:oracle.jdbc.OracleDriver}
+  jpa:
+    open-in-view: false
+
+management:
+  endpoint:
+    health:
+      show-details: always
