@@ -47,7 +47,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>org.baeldung.boot.Application</mainClass>
+					<mainClass>com.test.demo.DemoApplication</mainClass>
 					<layout>ZIP</layout>
 				</configuration>
 			</plugin>
